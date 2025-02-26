@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", serif;
+}
+
+.Container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.Banner, .nav__donate-btn, .nav__login-btn {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav {
+  margin: 30px 0;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: black;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav__link {
+  color: black;
+}
+.nav__link:hover {
+  text-decoration: underline;
+  color: red;
+}
+.nav__login-btn {
+  width: 125px;
+  height: 52px;
+  background-color: rgb(36, 36, 36);
+  gap: 5px;
+  color: white;
+  padding-left: 30px;
+}
+.nav__donate-btn {
+  width: 116px;
+  height: 52px;
+  border: 1px solid black;
+  padding-left: 30px;
+  color: black;
+}
+
+.Banner {
+  background-color: rgb(16, 35, 100);
+  color: white;
+  padding: 80px 60px;
+  font-weight: 900;
+}
+.Banner__head {
+  font-size: 64px;
+}
+.Banner__sub-head {
+  font-size: 18px;
+}
+
+.date {
+  margin-top: 30px;
+  gap: 20px;
+  padding: 30px;
+  display: flex;
+}
+.date__right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2px;
+}
+.date__head {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.date__content {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+.date__day {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 60px;
+}
+.date__value {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.title__section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid: column gap 6em;
+  grid: row gap 1em;
+}
+.title__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title__loadmore {
+  display: flex;
+  margin-top: 30px;
+  border-color: black;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7DA5B;
+}
+.logos__text1 {
+  color: #F33C5C;
+  font-weight: 900;
+  font-size: 75px;
+}
+.logos__text {
+  flex-direction: column;
+}
+.logos__content {
+  font-weight: 900;
+  font-size: 34px;
+  justify-content: left;
+}/*# sourceMappingURL=styles.css.map */
