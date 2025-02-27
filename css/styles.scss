@@ -69,25 +69,29 @@
 }
 //date
 .date{
-    margin-top: 30px;
-    gap: 20px;
-    padding: 30px;
+    margin-top: -80px;
+    gap: 60px;
+    padding: 134px;
     display: flex;
 
     &__right{
         display:flex;
         justify-content: space-between;
         flex-direction: column;
-        gap: 2px;
+        width: 520px;
+        font-weight: 700;
+        font-family: "Open Sans", serif;
+        font-size: 18px;
+        margin-top: -6px;
     }
         &__head{
         text-align: left;
         font-size: 30px;
-        font-weight: bold;
+        font-weight: 700;
         margin-bottom: 20px;
     }
     &__content{
-        display: flex;
+        display:flex;
         justify-content: left;
         gap: 20px;
     }
@@ -97,13 +101,13 @@
         border-radius: 5px;
         text-align: center;
         min-width: 60px;
+        border:1px solid #bdb7b7
     }
     &__value{
         display: block;
         font-size: 20px;
         font-weight: bold;
         color: #000;
-        flex-direction: column;
     }
 }
 .title {
@@ -141,7 +145,7 @@
         &-content {
             padding: 15px;
             text-align: left;
-
+        }
             &-title {
                 font-size: 1.2rem;
                 font-weight: bold;
@@ -191,38 +195,43 @@
             }
         }
     }
-}
+
 
 .logos{
     display: flex;
-    justify-content: center;
+    text-align: left;
     flex-direction: column;
-    align-items: center;
     background-color: #F7DA5B;
+    font-weight: 900;
+    padding: 50px;
+    align-items: center;
+
     &__text1{
      color:#F33C5C ;
      font-weight: 900;
-     font-size: 75px;
+     font-size: 50px;
+     text-align: center;
     }
-    &__text{
-        flex-direction: column;
+   
+    &__cont{
         display: flex;
         align-items: center;
-}   
-    &__content{
-        font-weight: 900;
-        font-size: 34px;
-        justify-content: left;
-        align-self: flex-start;
+        justify-content: space-between;
+        gap: 30px;
     }
     &__image{
-        margin-left: auto;
-        align-self: flex-end; 
+        max-width: 350px;
+    }
+    &__content1{
+        font-size: 18px;
+        line-height: 1.6;
     }
     &__content2{
-        align-self: flex-start;
+        font-size: 18px;
         color: #F43C5C;
         font-family: "Roboto",serif;
+        margin-top: 10px;
+        font-weight: bold;
     }
     &__text2{
         font-weight: 900;
@@ -230,7 +239,27 @@
         background-image:url(/PRACTICE2/assets/image\ 6.png);
         background-size: cover;
         transform: rotate(-4.3deg);
+        padding: 10px 20px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-top: 20px;
     }
+    &__button{
+        font-weight: bold;
+        color: white;
+        background-color: #FF217C;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 40px;
+        padding: 15px 30px;
+        font-size: larger;
+        z-index: 10;
+    }   
+    
+}
+.end{
+    background-color: #0B2A2B;
 }
     
         
