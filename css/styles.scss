@@ -9,7 +9,7 @@
     font-family:"Open Sans",serif;
   }  
   .Container{
-    width: 1296px;
+    width: 1440px;
     margin: 0 auto;
 }
 %flex-center {
@@ -26,6 +26,8 @@
         color: black;
         align-items: center;
         justify-content: flex-end;
+        font-weight: 600;
+        font-size: 14px;
     }
     &__link {
         color: black;
@@ -69,59 +71,78 @@
 }
 //date
 .date{
-    margin-top: -80px;
+    margin-top:-80px;
     gap: 60px;
     padding: 134px;
     display: flex;
 
     &__right{
         display:flex;
-        justify-content: space-between;
         flex-direction: column;
+        justify-content: space-between;
         width: 520px;
         font-weight: 700;
         font-family: "Open Sans", serif;
         font-size: 18px;
         margin-top: -6px;
-    }
+    
         &__head{
         text-align: left;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 700;
         margin-bottom: 20px;
+        max-width:518px ;
     }
     &__content{
         display:flex;
-        justify-content: left;
+        justify-content: center;
+        margin-right: 213px;
         gap: 20px;
+        font-weight: 600;
+        font-size: 15px; 
+
+        &__day{
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            padding:10px;
+            border-radius: 5px;
+            border: 1px solid ;
+            border-color: #CCCFDB;
+            text-align: center;
+            min-width: 60px;
+            gap: 9px;
+        }   
+        span{
+            font-weight: 700;
+            font-family: Open Sans;
+            font-size: 24px;
+            background-color: #EFF1F5;
+            border-radius: 5px;
+            margin: -10px;
+        }
     }
-    &__day{
-        background: #f4f4f4;
-        padding:10px;
-        border-radius: 5px;
-        text-align: center;
-        min-width: 60px;
-        border:1px solid #bdb7b7
+    &__content1{
+        min-width: 670px;
     }
-    &__value{
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        color: #000;
+    
+    
+    
     }
 }
+
 .title {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     &__section {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
         gap: 2em; /* Space between cards */
-        padding: 375px;
-        margin-top: -367px;
+        padding: 476px;
+        margin-top: -550px;
         margin-bottom: -207px;
+        margin-left: 47px;
     }
 
     &__card {
@@ -167,7 +188,7 @@
         }
     }
 
-    &__loadmore {
+    .loadmore {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
@@ -233,7 +254,9 @@
         margin-top: 10px;
         font-weight: bold;
     }
-    &__text2{
+    &__textcont{
+        width: 813.14px;
+        height: 159.89px;
         font-weight: 900;
         font-size: 50px;
         background-image:url(/PRACTICE2/assets/image\ 6.png);
@@ -258,10 +281,9 @@
     }   
     
 }
-.end{
-    background-color: #0B2A2B;
-}
+
     
+
         
     
 

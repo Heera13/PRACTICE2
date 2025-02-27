@@ -11,7 +11,7 @@ body {
 }
 
 .Container {
-  width: 1296px;
+  width: 1440px;
   margin: 0 auto;
 }
 
@@ -31,6 +31,8 @@ body {
   color: black;
   align-items: center;
   justify-content: flex-end;
+  font-weight: 600;
+  font-size: 14px;
 }
 .nav__link {
   color: black;
@@ -76,38 +78,51 @@ body {
 }
 .date__right {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   width: 520px;
   font-weight: 700;
   font-family: "Open Sans", serif;
   font-size: 18px;
   margin-top: -6px;
 }
-.date__head {
+.date__right__head {
   text-align: left;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
+  max-width: 518px;
 }
-.date__content {
+.date__right__content {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  margin-right: 213px;
   gap: 20px;
+  font-weight: 600;
+  font-size: 15px;
 }
-.date__day {
-  background: #f4f4f4;
+.date__right__content__day {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid;
+  border-color: #CCCFDB;
   text-align: center;
   min-width: 60px;
-  border: 1px solid #bdb7b7;
+  gap: 9px;
 }
-.date__value {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
+.date__right__content span {
+  font-weight: 700;
+  font-family: Open Sans;
+  font-size: 24px;
+  background-color: #EFF1F5;
+  border-radius: 5px;
+  margin: -10px;
+}
+.date__right__content1 {
+  min-width: 670px;
 }
 
 .title {
@@ -119,9 +134,10 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 2em; /* Space between cards */
-  padding: 375px;
-  margin-top: -367px;
+  padding: 476px;
+  margin-top: -550px;
   margin-bottom: -207px;
+  margin-left: 47px;
 }
 .title__card {
   background: white;
@@ -144,12 +160,12 @@ body {
   padding: 15px;
   text-align: left;
 }
-.title__card-content-title {
+.title__card-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
-.title__card-content-info {
+.title__card-info {
   font-size: 0.9rem;
   color: #666;
   display: flex;
@@ -157,17 +173,18 @@ body {
   gap: 5px;
   margin-bottom: 5px;
 }
-.title__card-content i {
+.title__card i {
   color: #555;
 }
-.title__loadmore {
+
+.loadmore {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   align-items: center;
   width: 100%;
 }
-.title__loadmore button {
+.loadmore button {
   padding: 10px 20px;
   border: 1px solid black;
   background: transparent;
@@ -182,7 +199,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.title__loadmore button:hover {
+.loadmore button:hover {
   background: black;
   color: white;
 }
@@ -222,7 +239,9 @@ body {
   margin-top: 10px;
   font-weight: bold;
 }
-.logos__text2 {
+.logos__textcont {
+  width: 813.14px;
+  height: 159.89px;
   font-weight: 900;
   font-size: 50px;
   background-image: url(/PRACTICE2/assets/image\ 6.png);
