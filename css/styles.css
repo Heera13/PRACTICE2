@@ -123,6 +123,9 @@ body {
 }
 .date__right__content1 {
   min-width: 670px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .title {
@@ -139,52 +142,14 @@ body {
   margin-bottom: -207px;
   margin-left: 47px;
 }
-.title__card {
-  background: white;
-  border-radius: 6px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-.title__card:hover {
-  transform: translateY(-5px);
-}
-.title__card-image {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.title__card-content {
-  padding: 15px;
-  text-align: left;
-}
-.title__card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.title__card-info {
-  font-size: 0.9rem;
-  color: #666;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 5px;
-}
-.title__card i {
-  color: #555;
-}
-
-.loadmore {
+.title__mo {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   align-items: center;
   width: 100%;
 }
-.loadmore button {
+.title__mo button {
   padding: 10px 20px;
   border: 1px solid black;
   background: transparent;
@@ -197,11 +162,7 @@ body {
   color: #F13E5D;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-.loadmore button:hover {
-  background: black;
-  color: white;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.9);
 }
 
 .logos {
@@ -212,27 +173,29 @@ body {
   font-weight: 900;
   padding: 50px;
   align-items: center;
+  gap: 20px;
 }
 .logos__text1 {
   color: #F33C5C;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 75px;
   text-align: center;
 }
 .logos__cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 203px;
 }
 .logos__image {
   max-width: 350px;
+  z-index: 10;
 }
-.logos__content1 {
+.logos__content {
   font-size: 18px;
   line-height: 1.6;
 }
-.logos__content2 {
+.logos__content span {
   font-size: 18px;
   color: #F43C5C;
   font-family: "Roboto", serif;
@@ -244,7 +207,7 @@ body {
   height: 159.89px;
   font-weight: 900;
   font-size: 50px;
-  background-image: url(/PRACTICE2/assets/image\ 6.png);
+  background-image: url(/assets/yell.png);
   background-size: cover;
   transform: rotate(-4.3deg);
   padding: 10px 20px;
@@ -253,14 +216,103 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
+.logos__textcont text {
+  transform: rotate(-4.3deg);
+}
 .logos__button {
   font-weight: bold;
   color: white;
   background-color: #FF217C;
   border-radius: 10px;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 100px;
   padding: 15px 30px;
   font-size: larger;
   z-index: 10;
+  font-family: Open Sans;
+  width: 585px;
+  height: 99px;
+}
+
+.icons {
+  display: flex;
+  background-color: #0B2A2B;
+  justify-content: space-between;
+}
+.icons__grp {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 70px;
+}
+.icons__text {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 64px;
+}
+.icons__links {
+  list-style: none;
+}
+.icons__imag {
+  margin-right: 200px;
+}
+.icons__links a {
+  color: #8DA1A1;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: underline;
+}
+.icons__content {
+  border: 3px solid #626262;
+  border-radius: 5px;
+  width: 602px;
+  height: 91px;
+}
+.icons__content input {
+  background-color: #0B2A2B;
+  margin: 20px 5px 5px 40px;
+  border: none;
+}
+.icons__content input::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 49px;
+}
+.icons__content input::placeholder {
+  color: #FFFFFF;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 49px;
+}
+.icons button {
+  color: #FFFFFF;
+  background-color: #F13E5D;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 8px 0 0 80px;
+  border-radius: 10px;
+  width: 285px;
+  height: 70px;
+}
+
+.foot {
+  background-color: #0B2A2B;
+  color: #8DA1A1;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 50px;
+  width: 194;
+  height: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #194E50;
+  padding: 20px;
 }/*# sourceMappingURL=styles.css.map */
