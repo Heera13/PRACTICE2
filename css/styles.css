@@ -175,8 +175,8 @@ body {
   grid-row-gap: 1em;
   padding-left: 121px;
   margin-top: -97px;
-  margin-left: 393px;
-  margin-right: 573px;
+  margin-left: 178px;
+  margin-right: 393px;
   justify-content: center;
 }
 @media screen and (max-width: 810px) {
@@ -351,13 +351,33 @@ body {
 
 .icons {
   display: flex;
+  position: relative;
+  z-index: 0;
   background-color: #0B2A2B;
   justify-content: space-between;
   margin-top: -24px;
-  position: relative;
-  box-shadow: 0px -50px 0px 0px #FFEC97 255, 247, 194, 1;
+  box-shadow: 0px -50px 0px 0px rgb(255, 247, 194);
 }
-.icons ::before {
+.icons__grp {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.icons__tri {
+  position: absolute;
+  z-index: 2;
+  height: 99px;
+  border-left: 52vw solid transparent;
+  border-right: 49vw solid transparent;
+  border-bottom: 70px solid #0B2A2B;
+  border-top: 100px;
+  top: -30px;
+  margin-top: -68px;
+}
+.icons__tri::before {
   content: "";
   position: absolute;
   top: -150px;
@@ -366,19 +386,21 @@ body {
   height: 400px;
   background-color: red !important;
   border: 5px solid blue;
-  z-index: -1;
+  z-index: 2;
 }
-.icons__tri {
-  height: 99px;
+.icons__shape {
+  position: relative;
+  z-index: 3;
+  height: 0;
   border-left: 52vw solid transparent;
   border-right: 49vw solid transparent;
   border-bottom: 70px solid #0B2A2B;
   border-top: 100px;
-  top: -30px;
   margin-top: -68px;
-  position: absolute;
 }
 .icons__but {
+  position: absolute;
+  z-index: 4;
   color: #FFFFFF;
   background-color: #F13E5D;
   font-weight: 800;
@@ -387,25 +409,9 @@ body {
   border-radius: 10px;
   width: 585px;
   height: 99px;
-  position: absolute;
   right: 407px;
   top: -97px;
   left: 618px;
-}
-.icons__shape {
-  height: 0;
-  border-left: 52vw solid transparent;
-  border-right: 49vw solid transparent;
-  border-bottom: 70px solid #0B2A2B;
-  border-top: 100px;
-  z-index: 1;
-  margin-top: -68px;
-}
-.icons__grp {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-left: 70px;
 }
 .icons__text {
   color: #FFFFFF;
@@ -416,9 +422,6 @@ body {
 .icons__links {
   list-style: none;
 }
-.icons__imag {
-  margin-right: 200px;
-}
 .icons__links a {
   color: #8DA1A1;
   font-family: Open Sans;
@@ -426,6 +429,9 @@ body {
   font-size: 18px;
   line-height: 50px;
   text-decoration: underline;
+}
+.icons__imag {
+  margin-right: 200px;
 }
 .icons__content {
   border: 3px solid #626262;
